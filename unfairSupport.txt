@@ -1,0 +1,21 @@
+// Sneak through the forest and ambush the shaman.
+// Listen to 'Commander Craig' for warning of approaching enemy.
+
+// Place flags after pressing Submit.
+while(true) {
+    var flag = hero.findFlag();
+    var enemy = hero.findNearestEnemy();
+    if (flag){
+        // Pick the flag up.
+        hero.pickUpFlag(flag);
+    } else if (enemy){
+        // Attack enemies on sight.
+        if(hero.isReady("cleave")){
+            hero.cleave(enemy);
+            }
+            else{
+                hero.attack(enemy);
+                }
+    }
+}
+
