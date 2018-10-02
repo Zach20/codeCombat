@@ -1,0 +1,8 @@
+// Save the village by blocking the path of the incoming sand yak herd.
+// Move closer to the red X.
+hero.moveXY(71,26);
+hero.moveXY(55,16);
+hero.moveXY(12,30);
+// Build a fence at the red X.
+hero.buildXY("fence",38,52);
+
