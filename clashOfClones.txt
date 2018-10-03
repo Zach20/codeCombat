@@ -1,0 +1,24 @@
+// You'll need good strategy to win this one!
+// Your clone will have the same equipment you have!
+// But, they're not very skilled at using special powers.
+var enemy = hero.findNearestEnemy();
+while(true){
+var enemy = hero.findNearestEnemy();
+var flag = hero.findFlag();
+    if(enemy && hero.isReady("cleave")){
+        hero.cleave(enemy);
+        }
+    if(enemy){
+        hero.attack(enemy);
+        }
+    if(flag){
+        if(flag.color == "violet"){
+            hero.moveXY(flag.pos.x,flag.pos.y);
+            hero.pickUpFlag(flag);
+            if(hero.canCast("chain-lightning",enemy)){
+                hero.cast("chain-lightning",enemy);
+                }
+        }
+        }
+    }
+
