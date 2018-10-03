@@ -1,0 +1,18 @@
+// Be careful with these ogres.
+// They are special trained fat-free uber ogres and very strong.
+// The keyword is fat-free.
+var enemyBeat = 0;
+while(enemyBeat < 4){
+    var enemy = hero.findNearestEnemy();
+    hero.bash(enemy);
+    hero.moveXY(40,33);
+    enemyBeat += 1;
+    }
+    hero.moveXY(16,55);
+    hero.moveXY(40,33);
+    hero.moveXY(65,57);
+    hero.moveXY(40,33);
+    hero.moveXY(64,13);
+    hero.moveXY(40,33);
+    hero.moveXY(18,10);
+
